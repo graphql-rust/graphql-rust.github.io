@@ -41,9 +41,6 @@ use juniper::{FieldResult};
 #     fn insert_human(&self, human: &NewHuman) -> FieldResult<Human> { Err("")? }
 # }
 
-
-use juniper::{FieldResult};
-
 #[derive(GraphQLEnum)]
 enum Episode {
     NewHope,
