@@ -18,8 +18,9 @@ before_install:
   - sudo apt-get update && sudo apt-get install -y yarn
 
 script:
-  - yarn test
+  - yarn
   - yarn build
+  - yarn test
   - touch _book/.nojekyll
 
 branches:
