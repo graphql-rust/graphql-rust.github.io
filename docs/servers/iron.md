@@ -41,7 +41,7 @@ use iron::prelude::*;
 use juniper::EmptyMutation;
 use juniper_iron::GraphQLHandler;
 
-fn context_factory(_: &mut Request) -> Result<(), iron::IronError> {
+fn context_factory(_: &mut iron::request::Request) -> IronResult<()> {
     Ok(())
 }
 
@@ -91,7 +91,7 @@ struct Context {
 
 impl juniper::Context for Context {}
 
-fn context_factory(req: &mut Request) -> Result<Context, iron::IronError> {
+fn context_factory(req: &mut Request) -> IronResult<Context> {
     Ok(Context {
         remote_addr: req.remote_addr
     })
