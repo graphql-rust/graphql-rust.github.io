@@ -1,0 +1,674 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Input objects · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-codeblock-rust/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="scalars.html" />
+    
+    
+    <link rel="prev" href="interfaces.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../quickstart.html">
+            
+                <a href="../quickstart.html">
+            
+                    
+                    Quickstart
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Type System</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="objects/defining_objects.html">
+            
+                <a href="objects/defining_objects.html">
+            
+                    
+                    Defining objects
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="objects/complex_fields.html">
+            
+                <a href="objects/complex_fields.html">
+            
+                    
+                    Complex fields
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="objects/using_contexts.html">
+            
+                <a href="objects/using_contexts.html">
+            
+                    
+                    Using contexts
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="objects/error_handling.html">
+            
+                <a href="objects/error_handling.html">
+            
+                    
+                    Error handling
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    Other types
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.2.1" data-path="enums.html">
+            
+                <a href="enums.html">
+            
+                    
+                    Enums
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.2" data-path="interfaces.html">
+            
+                <a href="interfaces.html">
+            
+                    
+                    Interfaces
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2.3" data-path="input_objects.html">
+            
+                <a href="input_objects.html">
+            
+                    
+                    Input objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="scalars.html">
+            
+                <a href="scalars.html">
+            
+                    
+                    Scalars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.5" data-path="unions.html">
+            
+                <a href="unions.html">
+            
+                    
+                    Unions
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Schema</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../schema/schemas_and_mutations.html">
+            
+                <a href="../schema/schemas_and_mutations.html">
+            
+                    
+                    Schemas and mutations
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Adding a server</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" >
+            
+                <span>
+            
+                    
+                    Integrations by Juniper
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../servers/hyper.html">
+            
+                <a href="../servers/hyper.html">
+            
+                    
+                    Hyper
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../servers/warp.html">
+            
+                <a href="../servers/warp.html">
+            
+                    
+                    Warp
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../servers/rocket.html">
+            
+                <a href="../servers/rocket.html">
+            
+                    
+                    Rocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../servers/iron.html">
+            
+                <a href="../servers/iron.html">
+            
+                    
+                    Iron
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" >
+            
+                <span>
+            
+                    
+                    Integrations by others
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" >
+            
+                <a target="_blank" href="https://github.com/actix/examples/tree/master/juniper">
+            
+                    
+                    Actix-Web
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" >
+            
+                <a target="_blank" href="https://github.com/finchers-rs/finchers-juniper">
+            
+                    
+                    Finchers
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" >
+            
+                <a target="_blank" href="https://github.com/tsukuyomi-rs/tsukuyomi-juniper">
+            
+                    
+                    Tsukuyomi
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Topics</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../advanced/non_struct_objects.html">
+            
+                <a href="../advanced/non_struct_objects.html">
+            
+                    
+                    Non-struct objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../advanced/objects_and_generics.html">
+            
+                <a href="../advanced/objects_and_generics.html">
+            
+                    
+                    Objects and generics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" >
+            
+                <span>
+            
+                    
+                    [Context switching]
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" >
+            
+                <span>
+            
+                    
+                    [Dynamic type system]
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.5" data-path="../advanced/multiple_ops_per_request.html">
+            
+                <a href="../advanced/multiple_ops_per_request.html">
+            
+                    
+                    Multiple operations per request
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Input objects</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="input-objects"><a name="input-objects" class="plugin-anchor" href="#input-objects"><i class="fa fa-link" aria-hidden="true"></i></a>Input objects</h1>
+<p>Input objects are complex data structures that can be used as arguments to
+GraphQL fields. In Juniper, you can define input objects using a custom derive
+attribute, similar to simple objects and enums:</p>
+<pre><code class="lang-rust"><span class="hljs-meta">#[macro_use]</span> <span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> juniper_codegen;
+<span class="hljs-meta">#[macro_use]</span> <span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> juniper;
+
+<span class="hljs-meta">#[derive(GraphQLInputObject)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Coordinate</span></span> {
+    latitude: <span class="hljs-keyword">f64</span>,
+    longitude: <span class="hljs-keyword">f64</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Root</span></span>;
+
+graphql_object!(Root: () |&amp;<span class="hljs-keyword">self</span>| {
+    field users_at_location(coordinate: Coordinate, radius: <span class="hljs-keyword">f64</span>) -&gt; <span class="hljs-built_in">Vec</span>&lt;User&gt; {
+        <span class="hljs-comment">// Send coordinate to database</span>
+    }
+});
+</code></pre>
+<h2 id="documentation-and-renaming"><a name="documentation-and-renaming" class="plugin-anchor" href="#documentation-and-renaming"><i class="fa fa-link" aria-hidden="true"></i></a>Documentation and renaming</h2>
+<p>Just like the <a href="defining_objects.md">other</a> <a href="enums.html">derives</a>, you can rename
+and add documentation to both the type and the fields:</p>
+<pre><code class="lang-rust"><span class="hljs-meta">#[macro_use]</span> <span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> juniper_codegen;
+<span class="hljs-meta">#[macro_use]</span> <span class="hljs-keyword">extern</span> <span class="hljs-keyword">crate</span> juniper;
+
+<span class="hljs-meta">#[derive(GraphQLInputObject)]</span>
+<span class="hljs-meta">#[graphql(name=<span class="hljs-meta-string">&quot;Coordinate&quot;</span>, description=<span class="hljs-meta-string">&quot;A position on the globe&quot;</span>)]</span>
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">WorldCoordinate</span></span> {
+    <span class="hljs-meta">#[graphql(name=<span class="hljs-meta-string">&quot;lat&quot;</span>, description=<span class="hljs-meta-string">&quot;The latitude&quot;</span>)]</span>
+    latitude: <span class="hljs-keyword">f64</span>,
+
+    <span class="hljs-meta">#[graphql(name=<span class="hljs-meta-string">&quot;long&quot;</span>, description=<span class="hljs-meta-string">&quot;The longitude&quot;</span>)]</span>
+    longitude: <span class="hljs-keyword">f64</span>
+}
+
+<span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">Root</span></span>;
+
+graphql_object!(Root: () |&amp;<span class="hljs-keyword">self</span>| {
+    field users_at_location(coordinate: WorldCoordinate, radius: <span class="hljs-keyword">f64</span>) -&gt; <span class="hljs-built_in">Vec</span>&lt;User&gt; {
+        <span class="hljs-comment">// Send coordinate to database</span>
+    }
+});
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="interfaces.html" class="navigation navigation-prev " aria-label="Previous page: Interfaces">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="scalars.html" class="navigation navigation-next " aria-label="Next page: Scalars">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Input objects","level":"2.2.3","depth":2,"next":{"title":"Scalars","level":"2.2.4","depth":2,"path":"types/scalars.md","ref":"types/scalars.md","articles":[]},"previous":{"title":"Interfaces","level":"2.2.2","depth":2,"path":"types/interfaces.md","ref":"types/interfaces.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchors","codeblock-omit","codeblock-rust","sane-sidebar","-sharing"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"codeblock-rust":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sane-sidebar":{},"codeblock-omit":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"types/input_objects.md","mtime":"2018-09-19T21:10:22.648Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-19T21:12:18.142Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-sane-sidebar/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
