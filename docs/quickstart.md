@@ -32,7 +32,7 @@ resolvers, which you will use for the `Query` and `Mutation` roots.
 ```rust
 #[macro_use] extern crate juniper;
 
-use juniper::{FieldResult};
+use juniper::FieldResult;
 
 # struct DatabasePool;
 # impl DatabasePool {
