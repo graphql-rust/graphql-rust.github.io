@@ -188,4 +188,4 @@ fn main() {
 [rocket]: servers/rocket.md
 [iron]: servers/iron.md
 [tutorial]: ./tutorial.html
-[jp_obj_macro]: https://docs.rs/juniper/latest/juniper/macro.graphql_object.html
+[jp_obj_macro]: https://docs.rs/juniper/latest/juniper/attr.graphql_object.html
