@@ -120,6 +120,6 @@ graphql_object!(Root: Context |&self| {
 
 FIXME: Show how the `persistent` crate works with contexts using e.g. `r2d2`.
 
-[iron]: http://ironframework.io
+[iron]: https://github.com/iron/iron
 [graphiql]: https://github.com/graphql/graphiql
 [mount]: https://github.com/iron/mount
